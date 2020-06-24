@@ -1,0 +1,421 @@
+@font-face {
+	src: url('../fonts/OpenSans-Regular.ttf');
+	font-family: 'OpenSans Regular';
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-Italic.ttf');
+	font-family: 'OpenSans Italic';
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-Bold.ttf');
+	font-family: 'OpenSans Bold';
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-SemiBold.ttf');
+	font-family: 'OpenSans SemiBold';
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-ExtraBold.ttf');
+	font-family: 'OpenSans ExtraBold';
+}
+
+body {
+	margin: 0;
+	font-family: 'OpenSans Regular', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+/* Некоторые стили взял на основе бутсрапа так как уже дано 99% проектов в работе верстаю на нем. Основано на flex. "ИТишники ленивые люди =)" */
+
+.container-my{
+	max-width: 1249px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.row-my {
+	display: flex;
+	flex: 1 1;
+	flex-wrap: wrap;
+}
+.align-items-center-my {
+	align-items: center!important;
+}
+.justify-content-center-my {
+	justify-content: center!important;
+}
+.justify-content-between-my {
+	justify-content: space-between!important;
+}
+.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+.section-header .section-heading{
+	margin-bottom: 0;
+}
+.section-heading{
+	font-size: 42px;
+	line-height: 55px;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+	font-weight: bold;
+	font-family: 'OpenSans Bold';
+}
+
+.header-line {
+	width: 122px;
+	height: 3px;
+	background-color: #ff2d2d;
+	border: none;
+}
+.line-left{
+	margin-left: 0;
+}
+
+.text-center{
+	text-align: center;
+}
+.btn{
+	display: inline-block;
+	padding: 15px 63px;
+	background-color: #FF2D2D;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	border: 0;
+}
+.btn:hover{
+	background-color: #d82525;
+}
+.btn-outline{
+	display: inline-block;
+	padding: 15px 63px;
+	border: 2px solid #FF0000;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FF2D2D;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.btn-outline:hover{
+	background-color: #FF2D2D;
+	color: #fff;
+}
+
+
+header{
+	background-color: #f6f2f2;
+	padding-top: 29px;
+}
+.main-menu{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #313030;
+}
+.main-menu > a {
+	padding: 39px 30px 30px;
+	color: #e0e0e0;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.main-menu > a:hover {
+	background-color: #ff3f40;
+}
+
+.intro{
+	padding-top: 102px;
+	padding-bottom: 111px;
+	background-color: #f6f2f2;
+}
+.intro .left-block{
+	max-width:612px;
+	padding-right: 82px;
+}
+.intro .right-block{
+	max-width: 551px;
+}
+.intro h1{
+	margin: 0;
+	font-size: 60px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 18px;
+	font-family: 'OpenSans ExtraBold';
+	letter-spacing: 1.5px;
+}
+.intro .btn{
+	margin-top: 63px;
+}
+
+.services{
+	padding-top: 107px;
+	padding-bottom: 112px;
+}
+.services .left-block{
+	width: 539px;
+}
+.services .left-block .btn-outline{
+	margin-top: 64px;
+}
+.services .right-block{
+	flex: 1 1;
+	max-width: 609px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.service {
+	flex: 1 1 288px;
+	width: 288px;
+	margin-bottom: 50px;
+}
+.service-hr{
+	margin: 0;
+	border: 1px solid #ECECEC;
+}
+.service h3{
+	margin-bottom: 0;
+}
+.service p{
+	margin-top: 0;
+}
+
+.feature-products{
+	padding-top: 100px;
+	padding-bottom: 70px;
+}
+.products-filter {
+	list-style: none;
+	margin-top: 86px;
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+.products-filter a {
+	color: #000;
+	margin-right: 55px;
+	font-size: 22px;
+	font-family: 'OpenSans SemiBold';
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.products-filter li:last-child  a{
+	margin-right: 0;
+}
+.products-filter a.active {
+	color: #ff2d2d;
+}
+.products-filter a:hover {
+	color: #ff2d2d;
+}
+.product {
+	flex: 1 1 24%;
+	min-width: 250px;
+	max-width: 299px;
+	height: 291px;
+	margin-bottom: 18px;
+	object-fit: cover;
+}
+
+
+/* Прошу прощения, доверстывал уже на сетке бутстрапа. Немного не успеваю с заданиями по верстке( */
+
+.team{
+	padding-top: 70px;
+	padding-bottom: 108px;
+}
+.team .section-header{
+	margin-bottom: 80px;
+}
+.left-member{
+	background-color: #eb6d4a;
+}
+.main-member-photo {
+	width: 321px;
+	height: 458px;
+	margin-right: 65px;
+	background-color: #eb6d4a8f;
+}
+.main-member-info{
+	margin-bottom: 40px;
+}
+.main-member-info > h3 {
+	position: relative;
+	bottom: 5px;
+	font-size: 30px;
+	font-family: 'OpenSans SemiBold';
+	text-transform: uppercase;
+	opacity: 0.8;
+	margin-bottom: 16px;
+}
+.member-social-links > a {
+	color: #000;
+	font-size: 18px;
+	font-family: 'OpenSans Italic';
+	text-decoration: none;
+	margin-right: 30px;
+}
+.member-social-links > a:hover {
+	text-decoration: underline;
+}
+.main-member-info > p {
+	margin-bottom: 34px;
+}
+
+.member {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.member > h3 {
+	visibility: hidden;
+	color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 37px;
+	text-align: center;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.member:hover > h3 {
+	visibility: visible;
+}
+
+.member-photo {
+	display: block;
+	width: 100%;
+	background-color: #d4dce680;
+	object-fit: cover;
+}
+
+.subscribe {
+	background-color: #2c2c2c;
+	padding-top: 124px;
+	padding-bottom: 140px;
+	color: #fff;
+}
+.subscribe h2{
+	font-size: 42px;
+}
+.subscribe input{
+	border: 0;
+	margin-right: 19px;
+	border-radius: 5px;
+	width: 320px;
+	height: 49px;
+	padding: 0px 22px;
+}
+
+.feedback{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.feedback .section-header{
+	margin-bottom: 70px;
+}
+.feedback-form{
+	padding-right: 40px;
+}
+.input{
+	width: 100%;
+	border: 0;
+	border-radius: 5px;
+	background-color: #f3f3f3;
+	padding: 0px 22px;
+	height: 50px;
+	margin-bottom: 15px;
+}
+.text-area{
+	width: 100%;
+	border: 0;
+	border-radius: 5px;
+	background-color: #f3f3f3;
+	padding: 22px;
+	margin-bottom: 15px;
+}
+.feedback-form .btn{
+	width: 100%;
+}
+.contacts{
+	background-color: #2D2D2D;
+	color: #fff;
+	height: 100%;
+	padding: 70px 50px;
+}
+.contacts h2{
+	margin-top: 0;
+}
+
+footer {
+	background-color: #2c2c2c;
+	padding-top: 53px;
+	padding-bottom: 34px;
+	color: #e0e0e0;
+}
+.footer-social-links > a:not(:last-child) {
+	margin-right: 18px;
+	display: inline-block;
+}
+
+@media (max-width: 992px){
+	.m-w-100{
+		width: 100%;
+	}
+	.row{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	header{
+		padding-top: 0;
+	}
+
+	.intro{
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+	.intro .row{
+		flex-direction: column-reverse;
+	}
+	.intro .left-block{
+		padding: 0;
+		margin-bottom: 15px;
+	}
+	.intro .right-block{
+		width: 100%;
+	}
+	.intro .right-block img{
+		width: 100%;
+	}
+
+	.intro h1{
+		font-size: 30px;
+	}
+	.btn {
+		display: inline-block;
+		margin-top: 30px;
+	}
+	.services .left-block{
+		margin-bottom: 40px;
+	}
+	.services .left-block .btn-outline{
+		margin-top: 20px;
+	}
+	.contacts{
+		margin-top: 30px;
+	}
+}
